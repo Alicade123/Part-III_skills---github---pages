@@ -1,8 +1,9 @@
 title: "Alicade Blog"
 description: "Software Development | QA Engineering | Cloud"
 author: "Alicade"
-baseurl: "https://alicade123.github.io/Part-III_skills---github---pages/"
-url: "https://Alicade123.github.io"
+
+url: "https://alicade123.github.io"
+baseurl: "/Part-III_skills---github---pages"
 
 theme: minima
 
@@ -15,4 +16,3 @@ markdown: kramdown
 collections:
   posts:
     output: true
-
