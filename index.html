@@ -12,14 +12,19 @@ layout: default
 
   {% for post in site.posts limit:5 %}
   <div class="post-card">
+    
     <h3>
       <a href="{{ post.url | relative_url }}">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <a class="read-more" href="{{ post.url | absolute_url }}">Read more →</a>
         {{ post.title }}
       </a>
     </h3>
+
     <p>{{ post.excerpt }}</p>
+
+    <a class="read-more" href="{{ post.url | relative_url }}">
+      Read more →
+    </a>
+
   </div>
   {% endfor %}
 
