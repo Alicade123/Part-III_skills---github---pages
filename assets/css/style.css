@@ -135,12 +135,31 @@ h2 {
   background: rgba(255,255,255,0.06);
 }
 
+
 /* =========================
    ARTICLE (POST PAGE)
 ========================= */
 .post h1 {
   font-size: 2.2rem;
   margin-bottom: 10px;
+}
+.post {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.post h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.post ul {
+  margin-left: 20px;
+}
+
+.post li {
+  margin-bottom: 8px;
 }
 
 .meta {
