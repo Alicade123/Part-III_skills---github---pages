@@ -167,6 +167,18 @@ h2 {
   color: #64748b;
   margin-bottom: 20px;
 }
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #38bdf8;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.read-more:hover {
+  opacity: 0.7;
+}
 
 /* =========================
    FOOTER (STICKY)
