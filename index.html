@@ -14,6 +14,7 @@ layout: default
   <div class="post-card">
     <h3>
       <a href="{{ post.url | relative_url }}">
+      <a class="read-more" href="{{ post.url | absolute_url }}">Read more →</a>
         {{ post.title }}
       </a>
     </h3>
