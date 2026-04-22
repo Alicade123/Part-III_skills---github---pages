@@ -1,31 +1,91 @@
 ---
 layout: default
+title: Home
+description: Portfolio of Alicade featuring projects, blog posts, and contact information.
 ---
 
-<section class="hero">
-  <h1>Hi, I'm Alicade 👋</h1>
-  <p>QA Engineer • Developer • Cloud Enthusiast</p>
+<section class="hero reveal">
+  <p class="eyebrow">QA Engineer • Developer • Cloud Enthusiast</p>
+  <h1>Building reliable products through engineering + quality.</h1>
+  <p class="hero-copy">I design, test, and ship software with a focus on clean architecture, automation, and performance.</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="{{ '/pages/projects' | relative_url }}">View Projects</a>
+    <a class="btn btn-secondary" href="{{ '/pages/contact' | relative_url }}">Let's Connect</a>
+    <a class="btn btn-ghost" href="{{ '/assets/docs/resume.pdf' | relative_url }}">Download Resume</a>
+  </div>
 </section>
 
-<section>
-  <h2>Latest Posts</h2>
+<section class="section reveal" aria-labelledby="skills-heading">
+  <h2 id="skills-heading">Skills & Tech Stack</h2>
+  <ul class="chip-list" role="list">
+    <li>Java</li>
+    <li>JavaScript</li>
+    <li>Playwright</li>
+    <li>Selenium</li>
+    <li>API Testing</li>
+    <li>Postman / Bruno</li>
+    <li>GitHub Actions</li>
+    <li>AWS</li>
+    <li>Docker</li>
+    <li>SQL</li>
+  </ul>
+</section>
+
+<section class="section reveal" aria-labelledby="projects-heading">
+  <div class="section-heading">
+    <h2 id="projects-heading">Featured Projects</h2>
+    <a href="{{ '/pages/projects' | relative_url }}">See all →</a>
+  </div>
+  <div class="card-grid">
+    <article class="card">
+      <h3>End-to-End Test Automation Suite</h3>
+      <p>Scalable regression suite built with Playwright, parallel execution, and CI quality gates.</p>
+    </article>
+    <article class="card">
+      <h3>API Contract Validation Toolkit</h3>
+      <p>Reusable checks for schema validation, auth flows, and performance baselines across services.</p>
+    </article>
+    <article class="card">
+      <h3>Cloud Reliability Lab</h3>
+      <p>Practice environment for resilient deployments, observability dashboards, and incident drills.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section reveal" id="latest-posts" aria-labelledby="posts-heading">
+  <div class="section-heading">
+    <h2 id="posts-heading">Latest Blog Posts</h2>
+  </div>
 
   {% for post in site.posts limit:5 %}
-  <div class="post-card">
-    
-    <h3>
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
-      </a>
-    </h3>
-
-    <p>{{ post.excerpt }}</p>
-
-    <a class="read-more" href="{{ post.url | relative_url }}">
-      Read more →
-    </a>
-
-  </div>
+  <article class="post-card">
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p>{{ post.excerpt | strip_html | truncate: 170 }}</p>
+    <a class="read-more" href="{{ post.url | relative_url }}">Read more →</a>
+  </article>
   {% endfor %}
+</section>
 
+<section class="section reveal" aria-labelledby="testimonials-heading">
+  <h2 id="testimonials-heading">Testimonials</h2>
+  <div class="card-grid">
+    <blockquote class="card quote">
+      “Alicade brings a rare mix of engineering depth and QA discipline.”
+      <cite>— Team Lead (placeholder)</cite>
+    </blockquote>
+    <blockquote class="card quote">
+      “Automated coverage and release confidence improved significantly.”
+      <cite>— Product Manager (placeholder)</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section class="section reveal" aria-labelledby="stats-heading">
+  <h2 id="stats-heading">GitHub Snapshot</h2>
+  <p class="muted">You can replace this section with live widgets or pinned repositories later.</p>
+  <div class="stats-grid">
+    <div class="stat-card"><strong>20+</strong><span>Repositories</span></div>
+    <div class="stat-card"><strong>100+</strong><span>Commits this year</span></div>
+    <div class="stat-card"><strong>QA + Dev</strong><span>Cross-functional focus</span></div>
+  </div>
 </section>

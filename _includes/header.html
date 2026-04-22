@@ -1,9 +1,15 @@
 <header class="header">
-  <div class="logo">Alicade.dev</div>
-  <nav>
+  <a class="logo" href="{{ '/' | relative_url }}">Alicade.dev</a>
+
+  <nav aria-label="Primary navigation" class="nav-links">
     <a href="{{ '/' | relative_url }}">Home</a>
     <a href="{{ '/pages/about' | relative_url }}">About</a>
     <a href="{{ '/pages/projects' | relative_url }}">Projects</a>
     <a href="{{ '/pages/contact' | relative_url }}">Contact</a>
+    <a href="{{ '/#latest-posts' | relative_url }}">Blog</a>
   </nav>
+
+  <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle light and dark mode" aria-pressed="true">
+    ☀️ Light
+  </button>
 </header>
