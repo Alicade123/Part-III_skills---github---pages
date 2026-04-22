@@ -13,6 +13,8 @@ plugins:
 
 markdown: kramdown
 
+google_analytics_id: "" # Add your GA4 ID, e.g. G-XXXXXXXXXX
+
 collections:
   posts:
     output: true

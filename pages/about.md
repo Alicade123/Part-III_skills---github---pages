@@ -1,16 +1,22 @@
 ---
 layout: default
 title: About
+description: Learn more about Alicade, software engineer and QA specialist.
 ---
 
 ## About Me
 
-I am a Software Developer and QA Engineer.
+I’m a software engineer and QA specialist focused on delivering reliable, scalable, and production-ready systems.
 
-I am a Software Developer and QA Engineer with a strong focus on building reliable, scalable, and well-tested systems. My work combines backend development expertise with advanced testing practices to ensure software quality at every stage of the development lifecycle.
+My core strength is bridging **development and quality engineering**. I build features while designing test strategy, automation, and validation pipelines that catch issues early and improve release confidence.
 
-I specialize in API testing, automation, and system validation, using tools such as Selenium, Playwright, TestNG, and modern JavaScript testing frameworks. I enjoy identifying edge cases, improving system reliability, and designing test strategies that prevent failures before they happen.
+### What I focus on
 
-Beyond testing, I have hands-on experience in backend development and cloud environments, allowing me to understand systems from both a developer and quality perspective. This dual skill set enables me to contribute effectively to building robust and production-ready applications.
+- Designing maintainable automation frameworks.
+- Building robust API and integration testing strategies.
+- Improving release quality through CI/CD quality gates.
+- Driving performance, reliability, and observability practices.
 
-I am continuously learning and exploring new technologies, particularly in cloud engineering, automation, and system performance optimization.
+### Current learning path
+
+I’m currently deepening my expertise in cloud architecture, system design, and high-scale application reliability.
